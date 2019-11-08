@@ -1,0 +1,151 @@
+.main-title {
+    font-size:32px;
+    line-height:40px;
+    margin:20px auto;
+    text-align:center;
+    max-width:520px;
+    font-family:SF Pro Text,sans-serif;
+    word-wrap:break-word;
+}
+
+.main-description {
+    font-size:16px;
+    line-height:23px;
+    max-width:630px;
+    text-align:center;
+    margin:0 auto;
+    color:#0c0c0d;
+}
+
+.upload-window {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-width: 2px;
+    border-radius: 2px;
+    border-color: #eeeeee;
+    border-style: dashed;
+    background-color: #fafafa;
+    color: #bdbdbd;
+    outline: none;
+    transition: border .24s ease-in-out;
+    width: 100%;
+}
+
+.configure-window {
+    border-width: 2px;
+    border-radius: 2px;
+    border-color: #eeeeee;
+    border-style: dashed;
+    background-color: #fafafa;
+    outline: none;
+    min-height: 13rem;
+}
+
+input[type=file] {
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+    z-index:-1}
+
+ol.progtrckr {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ol.progtrckr li {
+    display: inline-block;
+    text-align: center;
+    line-height: 4.5rem;
+    cursor: pointer;
+    width: 25%;
+}
+
+ol.progtrckr li span {
+    padding: 0 1.5rem;
+}
+
+@media (max-width: 650px) {
+    .progtrckr li span {
+        display: none;
+    }
+}
+.progtrckr em {
+    display: none;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+@media (max-width: 650px) {
+    .progtrckr em {
+        display: inline;
+    }
+}
+
+ol.progtrckr li.progtrckr-todo {
+    color: silver;
+    border-bottom: 4px solid silver;
+}
+
+ol.progtrckr li.progtrckr-doing {
+    color: black;
+    border-bottom: 4px solid dodgerblue;
+}
+
+ol.progtrckr li.progtrckr-done {
+    color: black;
+    border-bottom: 4px solid #5cb85c;
+}
+
+ol.progtrckr li:after {
+    content: "\00a0\00a0";
+}
+
+ol.progtrckr li:before {
+    position: relative;
+    bottom: -4rem;
+    float: left;
+    left: 50%;
+}
+
+ol.progtrckr li.progtrckr-todo:before {
+    content: "\039F";
+    color: silver;
+    background-color: white;
+    width: 1.2em;
+    line-height: 1.4em;
+}
+
+ol.progtrckr li.progtrckr-todo:hover:before {
+    color: #3caaf0;
+    color: #3caaf0;
+}
+
+ol.progtrckr li.progtrckr-doing:before {
+    content: "\2022";
+    color: white;
+    background-color: dodgerblue;
+    width: 1.2em;
+    line-height: 1.2em;
+    border-radius: 1.2em;
+}
+
+ol.progtrckr li.progtrckr-doing:hover:before {
+    color: #3caaf0;
+}
+
+ol.progtrckr li.progtrckr-done:before {
+    content: "\2713";
+    color: white;
+    background-color: #5cb85c;
+    width: 1.2em;
+    line-height: 1.2em;
+    border-radius: 1.2em;
+}
+
+ol.progtrckr li.progtrckr-done:hover:before {
+    color: #333;
+}

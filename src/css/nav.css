@@ -1,0 +1,21 @@
+.nav-title {
+    font-size: 16px;
+    width: 3em;
+    color: rgba(0,0,0,.5);
+    text-decoration: none;
+    line-height: 2.5em;
+    margin-bottom: 0;
+}
+
+.nav-title:hover {
+    color: rgba(0,0,0,1);
+}
+
+.my-nav-link {
+    margin-left: 23px;
+    color: rgba(0,0,0,0.5);
+}
+
+.my-nav-link:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,56 @@
+.item {
+    margin: 0 5px 5px 0;
+    display: inline-block;
+    padding: 0 8px;
+    height: 26px;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.nr {
+    background-color: #8bc3f5;
+}
+
+.ID {
+    background-color: #4ca3e6;
+}
+
+.PASSPORT {
+    background-color: #c7aee7;
+}
+
+.ns {
+    background-color: #d07f7f;
+}
+
+.DATE {
+    background-color: #ffcccb;
+}
+
+.PHONE {
+    background-color: #67ccaa;
+}
+
+.DIAL {
+    background-color: #99cc67;
+}
+
+.EMAIL {
+    background-color: #8ea4de;
+}
+
+.IP {
+    background-color: #ccc;
+}
+
+.DEPOSIT {
+    background-color: #ffcb99;
+}
+
+.CREDIT {
+    background-color: #f48363;
+}
+
+.CAR {
+    background-color: rgba(255, 74, 74, 0.5);
+}
