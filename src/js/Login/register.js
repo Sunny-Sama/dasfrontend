@@ -52,7 +52,7 @@ class Register extends React.Component{
             var that = this;
             axios({
                 method: 'post',
-                url: 'http://10.132.140.56:23333/users/signup',
+                url: 'http://localhost:23333/users/signup',
                 params: {
                     name: user.username,
                     password: user.password

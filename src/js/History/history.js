@@ -21,7 +21,7 @@ class History extends React.Component {
         if (this.props.getUser().userid !== '') {
             axios({
                 method: 'get',
-                url: 'http://10.132.140.56:23333/files/list',
+                url: 'http://localhost:23333/files/list',
                 params: {
                     uuid: this.props.getUser().userid,
                 },
@@ -44,7 +44,7 @@ class History extends React.Component {
         event.stopPropagation();
         event.preventDefault();
         axios({
-            url: 'http://10.132.140.56:23333/files/download/'+id,
+            url: 'http://localhost:23333/files/download/'+id,
             method: 'GET',
             responseType: 'blob', // important
         }).then((response) => {
@@ -69,7 +69,7 @@ class History extends React.Component {
         if(r){
             axios({
                 method: 'post',
-                url: 'http://10.132.140.56:23333/files/delete',
+                url: 'http://localhost:23333/files/delete',
                 params: {
                     reportId: id,
                 },
