@@ -163,7 +163,7 @@ class Detection extends React.Component {
         // 上传文件和检测信息并显示进度
         axios({
             method: 'post',
-            url: 'http://localhost:23333/files/upload',
+            url: 'http://10.141.222.205:23333/files/upload',
             data: fd,
             headers: {'Content-Type':undefined}
         })
@@ -201,7 +201,7 @@ class Detection extends React.Component {
         function checkAsyncTaskCompleted() {
             axios({
                 method: 'get',
-                url: 'http://localhost:23333/files/status',
+                url: 'http://10.141.222.205:23333/files/status',
                 params: {
                     reportIdList: fileIds
                 },

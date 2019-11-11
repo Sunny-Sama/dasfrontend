@@ -18,7 +18,7 @@ class Download extends React.Component {
         event.stopPropagation();
         event.preventDefault();
         axios({
-            url: 'http://localhost:23333/files/download/'+id,
+            url: 'http://10.141.222.205:23333/files/download/'+id,
             method: 'GET',
             responseType: 'blob', // important
         }).then((response) => {

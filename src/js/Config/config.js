@@ -24,7 +24,7 @@ class Config extends React.Component {
         if (this.props.getUser().userid !== '') {
             axios({
                 method: 'get',
-                url: 'http://localhost:23333/beans/list',
+                url: 'http://10.141.222.205:23333/beans/list',
                 params: {
                     uuid: this.props.getUser().userid,
                 },
@@ -74,7 +74,7 @@ class Config extends React.Component {
         if(r){
             axios({
                 method: 'post',
-                url: 'http://localhost:23333/beans/delete',
+                url: 'http://10.141.222.205:23333/beans/delete',
                 params: {
                     beanId: id,
                 },

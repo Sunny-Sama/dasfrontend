@@ -87,7 +87,7 @@ class NewModal extends React.Component {
 
             axios({
                 method: 'post',
-                url: 'http://localhost:23333/beans/create',
+                url: 'http://10.141.222.205:23333/beans/create',
                 params: {
                     name: name,
                     type: abbrev,

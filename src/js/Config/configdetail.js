@@ -32,7 +32,7 @@ class ConfigDetail extends React.Component {
         let that = this;
         axios({
             method: 'get',
-            url: 'http://localhost:23333/beans/get',
+            url: 'http://10.141.222.205:23333/beans/get',
             params: {
                 beanId: this.state.id,
             },
@@ -134,7 +134,7 @@ class ConfigDetail extends React.Component {
 
             axios({
                 method: 'post',
-                url: 'http://localhost:23333/beans/update',
+                url: 'http://10.141.222.205:23333/beans/update',
                 params: {
                    data: JSON.stringify(postContent)
                 },
@@ -145,7 +145,7 @@ class ConfigDetail extends React.Component {
 
                         axios({
                             method: 'get',
-                            url: 'http://localhost:23333/beans/get',
+                            url: 'http://10.141.222.205:23333/beans/get',
                             params: {
                                 beanId: that.state.id,
                             },

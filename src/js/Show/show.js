@@ -67,7 +67,7 @@ class Showpage extends React.Component {
 
         axios({
             method: 'get',
-            url: 'http://localhost:23333/show',
+            url: 'http://10.141.222.205:23333/show',
             params: {
                 sentence: sentence
             },

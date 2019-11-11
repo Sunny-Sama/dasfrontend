@@ -31,7 +31,7 @@ class Main extends React.Component {
             let that = this;
             axios({
                 method: 'get',
-                url: 'http://localhost:23333/beans/list',
+                url: 'http://10.141.222.205:23333/beans/list',
                 params: {
                     uuid: this.props.getUser().userid,
                 },

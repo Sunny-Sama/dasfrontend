@@ -45,7 +45,7 @@ class Login extends React.Component {
             let that = this;
             axios({
                 method: 'post',
-                url: 'http://localhost:23333/users/login',
+                url: 'http://10.141.222.205:23333/users/login',
                 params: {
                     identifier: this.state.username,
                     credential: this.state.password
