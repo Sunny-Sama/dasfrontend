@@ -1,21 +1,20 @@
-.nav-title {
-    font-size: 16px;
-    width: 3em;
-    color: rgba(0,0,0,.5);
-    text-decoration: none;
-    line-height: 2.5em;
-    margin-bottom: 0;
+.my-nav-title {
+    color: white!important;
 }
 
-.nav-title:hover {
-    color: rgba(0,0,0,1);
+.my-nav-title:hover {
+    color: rgb(215, 215, 215) !important;
 }
 
 .my-nav-link {
     margin-left: 23px;
-    color: rgba(0,0,0,0.5);
+    color: rgb(128, 128, 128);
 }
 
 .my-nav-link:hover {
     text-decoration: none;
+}
+
+.my-nav-bar {
+    background-image: url('../images/nav-bg.jpg');
 }

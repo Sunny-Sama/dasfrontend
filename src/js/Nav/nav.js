@@ -54,7 +54,7 @@ class Navg extends React.Component {
     render() {
         return (
             <Router>
-                <Navbar bg="light" variant="light">
+                <Navbar className="my-nav-bar" variant="dark">
                     <Navbar.Brand href="/">
                         <h2><FaSearch/> Privacy Detector</h2>
                     </Navbar.Brand>
@@ -63,11 +63,11 @@ class Navg extends React.Component {
                     </Navbar.Collapse>
                     <Navbar.Collapse className="justify-content-end">
                         <Nav>
-                            <NavLink tag={Link} to="/">首页</NavLink>
-                            <NavLink tag={Link} to="/show">演示</NavLink>
-                            <NavLink tag={Link} to="/about">关于</NavLink>
+                            <NavLink tag={Link} to="/" className="my-nav-title">首页</NavLink>
+                            <NavLink tag={Link} to="/show" className="my-nav-title">演示</NavLink>
+                            <NavLink tag={Link} to="/about" className="my-nav-title">关于</NavLink>
                             {this.state.logged ? (
-                                <NavDropdown title="个人中心" id="nav-dropdown">
+                                <NavDropdown title="个人中心" className="my-nav-title" id="nav-dropdown">
                                     <Link to="/history" className="my-nav-link">历史报告</Link><p/>
                                     <Link to="/config" className="my-nav-link">检测配置</Link><p/>
                                     <Link to="/config" className="my-nav-link">账号信息</Link>
@@ -75,7 +75,7 @@ class Navg extends React.Component {
                                     <NavDropdown.Item onClick={e=>this.logout(e)}>退出登录</NavDropdown.Item>
                                 </NavDropdown>
                                 ) : (
-                                <NavLink tag={Link} to="/login">登录</NavLink>)}
+                                <NavLink tag={Link} to="/login" className="my-nav-title">登录</NavLink>)}
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
